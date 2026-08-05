@@ -1,0 +1,46 @@
+export const site = {
+  name: "Window Cleaners Los Angeles",
+  domain: "windowcleanerslosangeles.com",
+  url: "https://www.windowcleanerslosangeles.com",
+  phoneDisplay: "(310) 526-3974",
+  phoneHref: "tel:+13105263974",
+  email: "info@windowcleanerslosangeles.com",
+  city: "Los Angeles",
+  state: "CA",
+  hoursLabel: "Monday–Sunday: 8:00 AM–8:00 PM",
+  serviceAreaLabel: "Los Angeles and nearby communities",
+  description:
+    "Professional residential and commercial window cleaning in Los Angeles. Interior and exterior windows, screens, tracks, frames, and hard-water stain removal.",
+  services: [
+    "Residential Window Cleaning",
+    "Commercial Window Cleaning",
+    "Interior & Exterior Windows",
+    "Screen Cleaning",
+    "Track & Frame Cleaning",
+    "Hard-Water Stain Removal",
+    "Skylight Cleaning",
+    "Mirror & Glass Cleaning",
+  ],
+  serviceAreas: [
+    "Los Angeles",
+    "Beverly Hills",
+    "Santa Monica",
+    "West Hollywood",
+    "Culver City",
+    "Brentwood",
+    "Pacific Palisades",
+    "Hollywood",
+    "Studio City",
+    "Sherman Oaks",
+    "Encino",
+    "Pasadena",
+    "Glendale",
+    "Burbank",
+    "Inglewood",
+    "Torrance",
+  ],
+} as const;
+
+export const booking = {
+  dashboardUrl: "https://yescrew-dashboard.vercel.app/book/",
+};
