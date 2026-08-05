@@ -15,7 +15,7 @@ export default function Home() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-slate-900/82 to-sky-900/72" />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950/82 via-slate-900/58 to-sky-900/35" />
         <div className="relative mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8 lg:py-28">
           <div>
             <p className="inline-flex rounded-full bg-sky-500/15 px-4 py-2 text-sm font-semibold text-sky-200 ring-1 ring-sky-400/30">
