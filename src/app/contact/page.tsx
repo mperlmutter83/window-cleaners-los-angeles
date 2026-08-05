@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import LeadForm from "@/components/LeadForm";
 import { site } from "@/lib/site";
 
@@ -27,6 +28,15 @@ export default function ContactPage() {
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
           <div className="space-y-6">
+            <div className="relative h-[300px] overflow-hidden rounded-3xl shadow-lg">
+              <Image
+                src="/images/high-rise-window-cleaner.jpg"
+                alt="Professional high-rise window cleaner working on exterior glass"
+                fill
+                sizes="(min-width: 1024px) 640px, 100vw"
+                className="object-cover"
+              />
+            </div>
             <div className="rounded-3xl bg-sky-50 p-8">
               <h2 className="text-2xl font-bold text-slate-900">Call or email</h2>
               <div className="mt-6 space-y-5">

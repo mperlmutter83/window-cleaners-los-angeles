@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: "en_US",
     type: "website",
+    images: ["/og-image.jpg"],
   },
   alternates: {
     canonical: site.url,

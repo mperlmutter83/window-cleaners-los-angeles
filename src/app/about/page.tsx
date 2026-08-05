@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
 
@@ -51,7 +52,17 @@ export default function AboutPage() {
               </Link>
             </div>
           </div>
-          <div className="rounded-3xl bg-sky-50 p-8">
+          <div className="space-y-6">
+            <div className="relative h-[320px] overflow-hidden rounded-3xl shadow-lg">
+              <Image
+                src="/images/commercial-window-cleaning-team.jpg"
+                alt="Two professional window cleaners suspended on a commercial glass building"
+                fill
+                sizes="(min-width: 1024px) 640px, 100vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="rounded-3xl bg-sky-50 p-8">
             <h3 className="text-2xl font-bold text-slate-900">Service details</h3>
             <dl className="mt-6 space-y-5">
               <div>
@@ -71,6 +82,7 @@ export default function AboutPage() {
                 <dd className="mt-1 text-slate-600">{site.serviceAreaLabel}</dd>
               </div>
             </dl>
+            </div>
           </div>
         </div>
       </section>

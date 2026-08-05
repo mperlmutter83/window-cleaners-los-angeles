@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import LeadForm from "@/components/LeadForm";
 import { site } from "@/lib/site";
 
@@ -34,6 +35,15 @@ export default function ServicesPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="relative mb-10 h-[280px] overflow-hidden rounded-3xl shadow-lg sm:h-[360px]">
+          <Image
+            src="/images/squeegee-window-cleaning.jpg"
+            alt="Hand using a squeegee to clean a soapy window and reveal blue sky"
+            fill
+            sizes="(min-width: 1024px) 1280px, 100vw"
+            className="object-cover"
+          />
+        </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {site.services.map((service) => (
             <div key={service} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
