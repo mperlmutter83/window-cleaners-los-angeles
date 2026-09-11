@@ -66,6 +66,22 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="h-full antialiased">
       <head>
+        {/* RFM site data - pushed before GTM loads */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  rfm: {
+    schema_version: "1.0",
+    site_id: "window_cleaners_los_angeles",
+    provider_id: "618762e0-1e73-4ec7-8e5b-ac1275a7acbb",
+    provider_name: "Window Cleaners Los Angeles",
+    service_category: "window_cleaning",
+    market: "los_angeles"
+  }
+});`,
+          }}
+        />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
